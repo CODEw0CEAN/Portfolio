@@ -1,0 +1,209 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /*logo on left, nav on right */
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.topnav {
+    display: flex;
+    gap: 30px;
+}
+.topnav a {
+    color: #f2f2f2; /* Default text color for links */
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.topnav {
+    background-color: #04AA6D !important;
+    color: white !important;
+}
+
+@media (max-width: 768p) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav a {
+        text-align: center;
+        width: 100%;
+        padding: 12px;
+    }
+
+}
+
+
+
+/*Body Contents*/
+.header {
+    margin-top: 150px;
+    font-size: 50px;
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+   
+     
+}
+
+body {
+    background-image: url('../images/backgroundimage2.jpg');
+    background-color: rgba(0, 0, 0, 0.6); 
+    background-blend-mode: multiply; /* Blend mode to darken the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    margin-top: 60px;
+    padding-top: 60px;
+    color: white;
+}
+
+body::before {
+    background-color: rgb(0, 0, 0, 0.6);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+
+
+
+.logo-container {
+    margin-top: 120px;
+    
+}
+
+.logo-container img{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    row-gap: 500px;
+    border: 1px solid lightblue;
+    background-size: cover;
+    box-shadow: 3px 3px 20px 5px;
+    transition: .4s;
+    margin: 40px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.logo-title {
+    position: absolute; /* Position the title absolutely */
+    padding-left: 60px;
+    font-size: 19px; /* Adjust font size */
+    font-weight: bold; /* Make the title bold */
+    padding-bottom: 100px;
+}
+
+
+/*Certificates*/
+.Certificates { 
+    font-family: serif;
+    font-size: x-large;
+    margin-top: 150px;
+}
+
+
+
+.Certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    opacity: 0.87;
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 600px) {
+    .Certificates-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+
+.certificate-title {
+    font-size: 19px; /* Adjust font size */
+    font-weight: bold; /* Make the title bold */
+    padding-bottom: 100px;
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 20px;
+    
+
+}
+.btn:hover{
+    background-color: lightcoral;
+    cursor: hand; 
+    cursor: pointer;
+    }
+    
+/*footer*/
+.footer {
+    margin-top: 300px;
+    position: relative;
+    width: 100%;
+    padding: 20px 10px;
+    background: rgb(0, 0, 0, 0.9);
+    color: white;
+    text-align: left;
+}
