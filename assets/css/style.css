@@ -1,3 +1,7 @@
+* {
+    font-family: serif;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between; /*logo on left, nav on right */
@@ -57,13 +61,18 @@
 
 /*Body Contents*/
 .header {
-    margin-top: 150px;
+
     font-size: 50px;
     font-family: serif;
     display: flex;
     justify-content: center;
-   
-     
+    color: #04AA6D;
+}
+
+.subheader {
+    margin-top: 20px;
+    color: white;
+    font-size: 19px; /* Decrease font size by 1px */
 }
 
 body {
@@ -98,34 +107,46 @@ body::before {
 
 
 .logo-container {
-    margin-top: 120px;
+    margin-top: 50px;
     
 }
 
-.logo-container img{
+.newline {
+    margin-bottom: 50px;
+}
+
+.logo-item {
     display: inline-block;
-    position: relative;
+    margin: 20px;
+    text-align: center;
+}
+
+.logo-item img {
     width: 100px;
     height: 100px;
-    row-gap: 500px;
     border: 1px solid lightblue;
     background-size: cover;
     box-shadow: 3px 3px 20px 5px;
     transition: .4s;
-    margin: 40px;
-    box-sizing: border-box;
     padding: 15px;
     border-radius: 20px;
     cursor: pointer;
 }
-
+.logo-item img {
+    filter: invert(100%);
+}
+.logo-item:hover img {
+    transform: scale(1.1);
+}
 
 .logo-title {
-    position: absolute; /* Position the title absolutely */
-    padding-left: 60px;
-    font-size: 19px; /* Adjust font size */
-    font-weight: bold; /* Make the title bold */
-    padding-bottom: 100px;
+    display: block;
+    margin-top: 10px; /* Reset margin */
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: -15px; /* Move the title up a bit more */
 }
 
 
@@ -136,7 +157,67 @@ body::before {
     margin-top: 150px;
 }
 
+.Certificates {
+    margin-top: 100px;
+    text-align: center;
+    color: #04AA6D;
+}
 
+.Certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.certificate:hover {
+    transform: translateY(-10px);
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.certificate .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.certificate .btn {
+    width: 100px;
+    height: 30px;
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.certificate .btn:hover {
+    background-color: #028a5e;
+}
 
 .Certificates-container {
     display: flex;
@@ -195,8 +276,125 @@ body::before {
     background-color: lightcoral;
     cursor: hand; 
     cursor: pointer;
-    }
-    
+}
+
+
+
+/*Contact page*/
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+}
+form {
+    max-width: 550px;
+    width: 90%;
+    color: black;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+
+.note {
+    color: rgba(255, 0, 0, 0.623);
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid rgba(218, 26, 26, 0.7);
+}
+textarea::-webkit-scrollbar {
+    width: 4px;
+}
+textarea::-webkit-scrollbar-thumb {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgba(218, 26, 26, 0.7), rgb(255, 67 , 61));
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error {
+    color: red;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+.success {
+    color: #28A745;
+}
+
+
+
+/*contact page*/
+.contact-container img{
+   justify-content: center;
+   display: flex;
+   width: 70px;
+   height: auto;
+   margin-bottom: 10px; /* Add some space between icons */
+}
+
+.center-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px; /* Add some space between icons */
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-container:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.icon-container img:hover {
+    filter: brightness(1.2) contrast(1.2) saturate(1.2);
+}
+
+.github-icon img {
+    filter: invert(100%);
+}
+
 /*footer*/
 .footer {
     margin-top: 300px;
@@ -206,4 +404,52 @@ body::before {
     background: rgb(0, 0, 0, 0.9);
     color: white;
     text-align: left;
+}
+
+/* About Page */
+.about-container {
+    margin-top: 100px;
+    text-align: center;
+    color: #04AA6D;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    color: white;
+    font-size: 19px; /* Decrease font size by 1px */
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
 }

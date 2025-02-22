@@ -25,6 +25,62 @@
 <body>
 
 <!--Content go here-->
+<div style="height:350px;"></div>
+<div class="contact-container">
+    <h1>Best Way to Contact Me</h1><br><br>
+    <div class="center-icons">
+        <div class="icon-container">
+            <a href="https:/discordapp.com/users/1148971024558342296" target="_blank">
+                <img src="assets/images/discord.png" alt="Discord Logo">
+            </a>
+            <span class="icon">Discord</span>
+        </div>
+        <div class="icon-container">
+            <a href="https://www.instagram.com/oceanrai12?igsh=c2Rwc3dvMGxkNXZp&utm_source=qr" target="_blank">
+                <img src="assets/images/instagram.png" alt="Instagram Logo">
+            </a>
+            <span class="icon">Instagram</span>
+        </div>
+        <div class="icon-container">
+            <a href="https://www.linkedin.com/in/sagar-rai/" target="_blank">
+                <img src="assets/images/linkedin.png" alt="LinkedIn Logo">
+            </a>
+            <span class="icon">LinkedIn</span>
+        </div>
+        <div class="icon-container github-icon">
+            <a href="https://github.com/CODEw0CEAN" target="_blank">
+                <img src="assets/images/github (1).svg" alt="GitHub Logo">
+            </a>
+            <span class="icon">GitHub</span>
+        </div>
+    </div>
+</div>
+
+<div style="height:200px;"></div>
+<div id="overlay">
+    <form onsubmit="event.preventDefault(); validateForm()">
+        <h1>Contact Form</h1>
+      
+        <h4 class="note">Note: This form is ONLY for display!</h4><br>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your name..">
+        <small class="error"></small>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Example@gmail.com">
+        <small class="error"></small>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write something..." rows="6"></textarea>
+        <small class="error"></small>
+        <div class="center">
+            <input type="submit" value="Send Message">
+            <p id="success"></p>
+        </div>
+        
+    </form>
+</div>
+
 
 
 
