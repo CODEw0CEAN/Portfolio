@@ -1,8 +1,8 @@
 # Ignore OS-specific files
-.DS_Store
+echo ".DS_Store" >> .gitignore
 
 # Ignore environment file
 .env
 
 # Ignore editor and IDE-specific files
-.vscode/
+.vscode
